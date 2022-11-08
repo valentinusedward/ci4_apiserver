@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "4506c9be-7a18-4314-8996-7f7bac5b9ca8",
+		"name": "CRUD API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24091302"
+	},
+	"item": [
+		{
+			"name": "Show Information Mahasiswa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/mahasiswa/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"mahasiswa",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cari nama orang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/mahasiswa/3289",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"mahasiswa",
+						"3289"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mhsnobp",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "mhsnama",
+							"value": "Budi123",
+							"type": "text"
+						},
+						{
+							"key": "mhsalamat",
+							"value": "Jalan Babarsari12",
+							"type": "text"
+						},
+						{
+							"key": "prodinama",
+							"value": "Informatika1",
+							"type": "text"
+						},
+						{
+							"key": "mhstgllhr",
+							"value": "2012-10-12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/mahasiswa/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"mahasiswa",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update data mahasiswa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mhsnama",
+							"value": "Cris Aja",
+							"type": "text"
+						},
+						{
+							"key": "mhsalamat",
+							"value": "Jalan Babarsari Benga",
+							"type": "text"
+						},
+						{
+							"key": "prodinama",
+							"value": "Informatika yang betul",
+							"type": "text"
+						},
+						{
+							"key": "mhstgllhr",
+							"value": "2000-10-10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/mahasiswa/3289",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"mahasiswa",
+						"3289"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Mahasiswa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/mahasiswa/11111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"mahasiswa",
+						"11111"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
